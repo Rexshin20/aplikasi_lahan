@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&family=Rubik:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Rubik", ui-sans-serif, system-ui, sans-serif;
+  --font-lp: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+
+  /* Palet template dashboard (src/scss/config/default/_variables.scss) */
+  --color-brand: #5f76e8;
+  --color-brand-dark: #212529;
+  --color-ink: #1c2d41;
+  --color-body: #7c8798;
+  --color-muted: #8392a5;
+  --color-line: #e9ecef;
+  --color-canvas: #f9fbfd;
+  --color-danger: #ff4f70;
+  --color-success: #22ca80;
+  --color-cyan: #01caf1;
+  --color-warning: #fdc16a;
+
+  /* Palet landing page (landingpage/style.css) */
+  --color-lp-primary: #5d87ff;
+  --color-lp-secondary: #49beff;
+  --color-lp-danger: #fa896b;
+  --color-lp-ink: #2a3547;
+  --color-lp-body: #5a6a85;
+  --color-lp-line: #ebf1f6;
+  --color-lp-light: #f6f9fc;
+}
+
+@utility card-shadow {
+  box-shadow: 0 3px 9px 0 rgba(169, 184, 200, 0.15);
+}
+
+@utility lp-card-shadow {
+  box-shadow: rgba(145, 158, 171, 0.2) 0px 0px 2px 0px,
+    rgba(145, 158, 171, 0.12) 0px 12px 24px -4px;
+}
+
+@utility lp-pro-shadow {
+  box-shadow: 0px 4px 45px rgba(0, 0, 0, 0.09);
+}
+
+@layer base {
+  html,
+  body,
+  #root {
+    min-height: 100%;
+  }
+
+  body {
+    @apply bg-canvas font-sans text-sm text-body antialiased;
+  }
+
+  button,
+  a,
+  input,
+  select {
+    cursor: pointer;
+  }
+}

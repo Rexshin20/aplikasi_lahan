@@ -1,0 +1,10 @@
+{
+  "name": "aplikasi-lahan",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/dev.js",
+    "install:all": "npm --prefix backend install && npm --prefix frontend install"
+  }
+}
